@@ -1,0 +1,134 @@
+:root {
+  --primary-blue: #002856 !important;
+  --secondary-blue: #002c55 !important;
+  --coral: #ef5d4a !important;
+}
+body {
+  overflow-x: hidden !important;
+}
+@media (max-width:576px) {
+  .f-sm{
+    font-size: 70% !important;
+}
+  }
+
+.bg-primary-blue {
+  background-color: var(--primary-blue) !important;
+}
+.bg-secondary-blue {
+  background-color: var(--primary-blue) !important;
+}
+.bg-coral {
+  background-color: var(--coral) !important;
+}
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+.p-05 {
+  padding: 0.1rem !important;
+}
+.px-05 {
+  padding-left: 0.1rem !important;
+  padding-right: 0.1rem !important;
+}
+.bannerPrincipal {
+  background-image: url(bannerPrincipal.png);
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5rem !important;
+}
+
+.btn-coral {
+  background-color: var(--coral) !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+navbar {
+  height: 5rem !important;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("ruta/de/tu/imagen.jpg");
+  background-size: auto 100%;
+}
+
+ul {
+  list-style-type: none; /* Esto eliminará los puntos predeterminados */
+}
+
+ul li {
+  padding-left: 2.5rem; /* Añade un poco de espacio a la izquierda para la imagen */
+  background: url("Vector.png") no-repeat left center; /* Coloca la imagen a la izquierda del texto */
+}
+
+#carouselIndex .carousel-indicators {
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#carouselIndex .carousel-indicators .active {
+  background-color: var(--primary-blue);
+  color: #fff;
+}
+#carouselIndex .carousel-indicators [data-bs-target] {
+  text-indent: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 1rem !important;
+}
+.carousel-item {
+  opacity: 0 !important;
+}
+.carousel-item.active {
+  opacity: 1 !important;
+  transition: transform 0s ease-in-out !important;
+}
+@media (max-width:576px) {
+  .rounded-sm {
+    border-radius: .3rem !important;
+  }
+}
+
+.imagen-banner {
+  width: 100%;
+  height: 8rem;
+  /* background-image: url('galery-banner/1.png');  */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 576px) {
+  .br-text-none {
+    display: none !important;
+  }
+}
+
+.whatsappLogo {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.input-whatsapp {
+  border: none;
+  background-color: #f2f3f5;
+  outline: none; /* Quita el contorno de enfoque */
+  box-shadow: none;
+}
+.input-whatsapp input {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+.input-whatsapp input::placeholder {
+  opacity: 0.3; /* Ajusta la opacidad según sea necesario */
+}
+/* Estilos adicionales para el campo de entrada cuando está activo */
+.input-whatsapp input:focus,
+.input-whatsapp input:active {
+  border: none; /* Quita el borde */
+  outline: none; /* Quita el contorno de enfoque */
+  box-shadow: none; /* Quita la sombra */
+}
